@@ -9,7 +9,7 @@ const forecast = async (lat, lon, callback) => {
       callback("try another location!", undefined)
     } else{ 
        const CurrentFinal = current || currentData;
-    callback(undefined, `It is currently ${CurrentFinal.temperature_2m} degrees out. There is a ${CurrentFinal.precipitation}% chance of rain.`);
+    callback(undefined, `It is currently ${CurrentFinal.temperature_2m} degrees out. There is a ${CurrentFinal.precipitation}% chance of rain. \n and of course i dont care about more information about weather application cause its just test project :) \n gl hf`);
     }
   } catch (error) {
     callback('net ghate: ', error.message, undefined);
